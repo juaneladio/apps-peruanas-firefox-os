@@ -1,0 +1,758 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="es-PE" class="fade">
+<!-- 
+  ^ la clase "fade" hace que las diapositivas pasen suavemente de una a otra
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- 
+  Si no quieres números en las diapositivas agrega la clase "nonumbers" al elemento HTML.
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicaciones peruanas para Firefox OS</title>
+<!-- 
+  Si subes la presentación a la web, asegurate de tener un buen título, este se mostrará en los resultados de las búsquedas y en las redes sociales
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <style type="text/css">
+    div[id$='bullets'].slide > div::after {
+      content: 'Solo para información, NO mostrar';
+      background: rgba(200,0,0,0.5);
+      color: #fff;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      padding: 5px 20px;
+      transform: rotate(90deg) translate(52%,-150px);
+      border-radius: 5px;
+    }
+    .full div[id$='bullets'].slide > div::after {
+      animation: wiggle alternate 1s infinite;
+    }
+    @keyframes wiggle {
+      from {
+        transform: rotate(90deg) translate(52%,-150px);
+      }
+      to {
+        transform: rotate(90deg) translate(52%,-160px);
+      }
+    }
+    .slide.shout h2 {
+      font-size: 130px;
+    }
+  </style>
+</head>
+<body class="list">
+
+  <header class="caption">
+    <h1>Apps peruanas para Firefox OS</h1>
+    <p class="footer">
+      Juan Eladio Sánchez Rosas, 
+      <a href="https://twitter.com/juaneladio">@juaneladio</a>
+    </p>
+  </header>
+  <aside class="talkdescription">
+    <p>Esta presentación usa el sistema shower, puedes pasar por encima de cada diapositiva para ver las notas y hacer clic en cualquiera de ellas para ir al modo de presentación. Después puedes usar las teclas para navegar <button onclick="goFullScreen()">Pantalla completa</button></p>
+    <p class="abstract">
+      <strong>Resumen: </strong>
+       Añade el resumen de tu charla aquí
+    </p>
+  </aside>
+
+<!-- 
+    Copia simplemente cada bloque completo para cada diapositiva que quieras. Las diapositivas especiales tienen clases extra. Cada dispositiva necesita un ID que permite un marcador y saltar a esa diapositiva específicamente.
+-->
+
+  <div id="firefoxos" class="slide"><div>
+    <section>
+      <header>
+        <h2>Firefox OS</h2>
+      </header>
+      <img src="pictures/fxos/firefoxos.png" 
+           alt="Firefox OS" 
+           class="middle" height="450">
+    <footer class="notes">
+      Esta es la diapositiva de introducción a Firefox OS. Explica que es un sistema operativo nuevo, basado completamente en tecnologías Web y pensado para mercados que otros no están cubriendo. Tanto cumpliendo las promesas que otros habían hecho como cumpliendo los principios definidos en el Manifiesto de Mozilla.
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="newmarket" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>Un nuevo mercado</h2>
+      </header>
+      <img src="pictures/fxos/hobbes-earth.jpg" 
+           alt="World wide web" 
+           class="middle shadow" height="450">
+    <footer class="notes">
+      Firefox OS, y esto es importante decirlo, no se enfoca en los mismos mercados que iOS y Android. Su objetivo principal es llevar la conectividad a la web a mercados que no pueden permitirse otras plataformas o ni siquiera tienen acceso a ellas. Es es la razón por la que los usuarios de Firefox OS no estan comparando lo que realizan como desarrolladores de Aplicaciones con las últimas desarrolladas para Andoird e iOS. Tu trabajo como desarrollador de aplicaciones para Firefox OS es brindar la primera impresión de la Web a muchos nuevos usuarios. No es una tarea sencilla, pero si muy fructífera y reconfortante. En lugar de copiar Angry Birds y no tener el rendimiento de hardware que necesitas, puedes ser el nuevo Angry Birds para una audiencia totalmente nueva.
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="fxapps" class="slide"><div>
+    <section>
+      <header>
+        <h2>Aplicaciones</h2>
+      </header>
+      <img src="pictures/fxos/apps.png" class="middle" height="400" 
+           alt="Firefox OS apps">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/developers/docs/concept">¿Qué hace que una aplicación sea genial?</a>
+      </p>
+    <footer class="notes">
+      Las aplicaciones son "lo nuevo", salvo que no lo son. Esencialmente una aplicación es una cosa que realiza una sola tarea bien y es autosuficiente. En lugar de abrir un sitio web y tenerlo abierto junto a otras pestañas, abres una aplicación y es el foco principal de tu atención. Las personas aman esto. Le da al usuario una experiencia de una sola tarea sin que se distraigan. La buena noticia es que las tecnologías que rodean al HTML5 son lo suficientemente flexibles como para brindar ambos casos: puedes crear un sitio web pero también puedes convertirlo fácilmente en una aplicación. 
+    </footer>
+    </section>
+  </div></div>
+
+	<div id="peru-in-world" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Perú: parte de la Ola 2</h2>
+			</header>
+			<img src="pictures/appsperu/PeruInWorld.png" class="middle" alt="Peru In World">
+
+		<footer class="notes">
+      Ola 1: España, Polonia, Colombia, Venezuela. Ola 2: Brasil, Perú, Uruguay, México.
+		</footer>
+
+		</section>
+	</div></div>
+
+  <div id="necesitamos-apps" class="slide"><div>
+    <section>
+      <header>
+        <h2>¡Necesitamos apps!</h2>
+      </header>
+      <img src="pictures/appsperu/ArturoMartinez.jpg" class="middle" height="400" 
+           alt="Arturo Martínez, Launch Team Venezuela">
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="ya-sabemos" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Ya sabemos cómo hacerlas</h2>
+      </header>
+      <img src="pictures/appsperu/MozCafeLima.jpg" class="middle" height="400" 
+           alt="MozCafé Lima">
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+	<div id="problemas-reales" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Pero no cualquier aplicación</h2>
+			</header>
+			<img src="pictures/appsperu/PaperToys.jpg" class="middle" alt="PaperToys">
+
+		<footer class="notes">
+      Apps que resuelvan problemas reales, en nuestro país
+		</footer>
+
+		</section>
+	</div></div>
+
+  <div id="apps-peruanas-firefox-os" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Apps peruanas para Firefox OS</h2>
+      </header>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+	<div id="subealmetrodelima" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Sube al Metro de Lima</h2>
+			</header>
+			<img src="pictures/appsperu/SubeAlMetroDeLima0.png" class="middle" alt="Sube al Metro de Lima">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/subealmetrodelima">Por Willy Aguirre (y más)</a>
+      </p>
+
+		<footer class="notes">
+			 Una aplicación para Firefox OS (y Firefox para Android) para usuarios de la Línea 1 del Tren Eléctrico de Lima, un sistema de transporte público en Perú.
+
+       Ofrece listado de estaciones, horarios por estación, mapa de estaciones, twits a partir de la cuenta oficial del servicio en Twitter) e información general del Tren Eléctrico. 
+		</footer>
+
+		</section>
+	</div></div>
+
+  <div id="subealmetrodelima-1" class="slide"><div>
+    <section>
+      <header>
+        <h2>Dos propósitos</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/SubeAlMetroDeLima1.png" 
+             alt="Sube al Metro de Lima"
+             height="480">
+      </figure>
+      <ul class="inner">
+        <li class="active">Uno utilitario</li>
+        <li>Pero también para poder enseñar</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+  <div id="subealmetrodelima-2" class="slide"><div>
+    <section>
+      <header>
+        <h2>Materiales</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/SubeAlMetroDeLima1.png" 
+             alt="Sube al Metro de Lima"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Firefox OS Building Blocks</li>
+        <li>JQuery</li>
+        <li>Backbone.JS</li>
+        <li>moment.js</li>
+        <li>OpenLayers.JS</li>
+        <li>Latlong.JS</li>
+        <li>QUOJS</li>
+        <li>underscore.JS</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+  <div id="subealmetrodelima-3" class="slide"><div>
+    <section>
+      <header>
+        <h2>Sobre la aplicación</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/SubeAlMetroDeLima1.png" 
+             alt="Sube al Metro de Lima"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Tipos</li>
+        <ul>
+          <li>Web / Hosted</li>
+        </ul>
+        <li>Marketplace</li>
+        <ul>
+          <li><a href="https://marketplace.firefox.com/app/subealmetrodelima">marketplace.firefox.com/app/subealmetrodelima</a></li>
+        </ul>
+        <li>GitHub</li>
+        <ul>
+          <li>github.com/marti1125/SubeAlMetro</li>
+          <li>github.com/mozillaperu/subealbus-diff</li>
+        </ul>
+        <li>¿Issues y planes?</li>
+        <ul>
+          <li>github.com/marti1125/SubeAlMetro/issues</li>
+        </ul>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+	<div id="metropolitano" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Metropolitano de Lima</h2>
+			</header>
+			<img src="pictures/appsperu/Metropolitano0.png" class="middle" alt="Metropolitano de Lima">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/metropolitano">Por Juan Eladio (y más)</a>
+      </p>
+
+		<footer class="notes">
+			 Información de rutas y servicios del Metropolitano, un sistema de transporte público en Lima, Perú (Peru). Si no tienes un equipo con Firefox OS ve a http://juaneladio.github.io/metropolitano/app.html
+		</footer>
+
+		</section>
+	</div></div>
+
+  <div id="metropolitano-1" class="slide"><div>
+    <section>
+      <header>
+        <h2>Dos propósitos (y uno secreto)</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/Metropolitano1.png" 
+             alt="Metropolitano de Lima"
+             height="480">
+      </figure>
+      <ul class="inner">
+        <li class="active">¿?</li>
+        <li>Uno utilitario</li>
+        <li>Pero también para poder enseñar</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+  <div id="metropolitano-2" class="slide"><div>
+    <section>
+      <header>
+        <h2>Materiales</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/Metropolitano1.png" 
+             alt="Metropolitano de Lima"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Firefox OS Building Blocks</li>
+        <li>Latlong.JS</li>
+        <li>Codebird.PHP</li>
+        <li>MapBox.JS</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+  <div id="metropolitano-3" class="slide"><div>
+    <section>
+      <header>
+        <h2>Sobre la aplicación</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/Metropolitano1.png" 
+             alt="Metropolitano de Lima"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Tipos</li>
+        <ul>
+          <li>Web / Packaged</li>
+        </ul>
+        <li>Marketplace</li>
+        <ul>
+          <li><a href="https://marketplace.firefox.com/app/metropolitano">marketplace.firefox.com/app/metropolitano</a></li>
+        </ul>
+        <li>GitHub</li>
+        <ul>
+          <li>github.com/juaneladio/metropolitano</li>
+        </ul>
+        <li>¿Issues y planes?</li>
+        <ul>
+          <li>github.com/juaneladio/metropolitano/issues</li>
+        </ul>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+	<div id="museamoz" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>MuseaMoz</h2>
+			</header>
+			<img src="pictures/appsperu/MuseaMoz0.png" class="middle" alt="MuseaMoz">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/museamoz">Por Ángel Quiroz (y más)</a>
+      </p>
+
+		<footer class="notes">
+			 Guía de Museos del Perú. Incluye museos de Amazonas (Chachapoyas), Ancash (Huaraz), Apurimac (Abancay), Arequipa, Ayacucho, Cajamarca, Callao, Cusco, Huancavelica, Huanuco, Ica, Junin (Huanuco), La Libertad (Trujillo), Lambayeque (Chiclayo), Lima, Loreto (Iquitos), Madre de Dios (Puerto Maldonado), Moquegua, Pasco, Piura, Puno, San Martín (Moyobamba), Tacna, Tumbes, Ucayali (Pucallpa).
+		</footer>
+
+		</section>
+	</div></div>
+
+  <div id="museamoz-1" class="slide"><div>
+    <section>
+      <header>
+        <h2>Un propósito (o quizá dos)</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/MuseaMoz1.png" 
+             alt="MuseaMoz"
+             height="480">
+      </figure>
+      <ul class="inner">
+        <li class="active">Una app para todo el Perú</li>
+        <li>Sin competir con negocios</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+  <div id="museamoz-2" class="slide"><div>
+    <section>
+      <header>
+        <h2>Materiales</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/MuseaMoz1.png" 
+             alt="MuseaMoz"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Firefox OS Building Blocks</li>
+        <li>jQuery</li>
+        <li>Flickr Public Feed (*)</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+  <div id="museamoz-3" class="slide"><div>
+    <section>
+      <header>
+        <h2>Sobre la aplicación</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/MuseaMoz1.png" 
+             alt="MuseaMoz"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Tipos</li>
+        <ul>
+          <li>Web / Hosted</li>
+        </ul>
+        <li>Marketplace</li>
+        <ul>
+          <li><a href="https://marketplace.firefox.com/app/museamoz">marketplace.firefox.com/app/museamoz</a></li>
+        </ul>
+        <li>GitHub</li>
+        <ul>
+          <li>github.com/AngelFQC/museaMoz</li>
+        </ul>
+        <li>¿Issues y planes?</li>
+        <ul>
+          <li>github.com/AngelFQC/museaMoz/issues</li>
+        </ul>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+	<div id="desastres" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Guía Desastres</h2>
+			</header>
+			<img src="pictures/appsperu/GuiaDesastres0.png" class="middle" alt="Guía Desastres">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/desastres">Por Juan Eladio (¡muahaha!)</a>
+      </p>
+
+		<footer class="notes">
+			  Información para prevenir y actuar ante desastres: actividad volcánica, aluvión (huayco), granizo y nevadas, helada, incendio urbano, inundación, lluvia intensa, oleaje anómalo, sequía, sismo, tormenta eléctrica, tsunami. A partir de datos de la web del INDECI Perú (Defensa Civi). También cuenta con indicaciones para preparar un pack de emergencia, compuesto por una mochila y una caja.
+        Para Perú incluye números de emergencia de gobiernos regionales.
+		</footer>
+
+		</section>
+	</div></div>
+
+  <div id="guiadesastres-1" class="slide"><div>
+    <section>
+      <header>
+        <h2>Dos propósitos</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/GuiaDesastres1.png" 
+             alt="Guía Desastres"
+             height="480">
+      </figure>
+      <ul class="inner">
+        <li class="active">¡Usar Bootstrap!</li>
+        <li>Pero para algo útil</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+  <div id="guiadesastres-2" class="slide"><div>
+    <section>
+      <header>
+        <h2>Materiales</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/GuiaDesastres1.png" 
+             alt="Guía Desastres"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Twitter Bootstrap</li>
+        <li>jQuery</li>
+        <li>Web INDECI (*)</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+  <div id="guiadesastres-3" class="slide"><div>
+    <section>
+      <header>
+        <h2>Sobre la aplicación</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/GuiaDesastres1.png" 
+             alt="Guía Desastres"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Tipos</li>
+        <ul>
+          <li>Web / Packaged</li>
+        </ul>
+        <li>Marketplace</li>
+        <ul>
+          <li><a href="https://marketplace.firefox.com/app/desastres">marketplace.firefox.com/app/desastres</a></li>
+        </ul>
+        <li>GitHub</li>
+        <ul>
+          <li>github.com/juaneladio/guiadesastres</li>
+        </ul>
+        <li>¿Issues y planes?</li>
+        <ul>
+          <li>github.com/juaneladio/guiadesastres/issues</li>
+        </ul>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+  
+  <div id="launch-team-peru" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Pero no estamos solos</h2>
+      </header>
+        <img src="pictures/appsperu/FirefoxOSLaunchTeamPeru.jpg" 
+             alt="Firefox OS Launch Team Peru" 
+             class="middle shadow" height="400">
+      <footer class="notes">
+        No hemos sido los únicos haciendo apps
+      </footer>
+    </section>
+  </div></div>
+
+	<div id="metro-de-lima" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Metro de Lima</h2>
+			</header>
+			<img src="pictures/appsperu/MetroDeLima0.png" class="middle" alt="Metro de Lima">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/metro-de-lima">Por José Arnao</a>
+      </p>
+
+		<footer class="notes">
+			   Perú: App de visualización de horarios de la Línea uno del Metro de Lima; los horarios a visualizar es con respecto al recorrido: Villa el Salvador a Grau, y Grau a Villa el Salvador, opción a seleccionar en la ventana principal.
+		</footer>
+
+		</section>
+	</div></div>
+
+  <div id="metro-de-lima-1" class="slide"><div>
+    <section>
+      <header>
+        <h2>Sobre la aplicación</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/MetroDeLima1.png" 
+             alt="Metro de Lima"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Propósito</li>
+        <li>Materiales</li>
+        <li>Tipos</li>
+        <ul>
+          <li>Web / Hosted</li>
+        </ul>
+        <li>¿Planes?</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+	<div id="peru-cookbook" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Perú Cookbook</h2>
+			</header>
+			<img src="pictures/appsperu/PeruCookbook0.png" class="middle" alt="Peru Cookbook">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/peru-cookbook-1">Por Percy Diez</a>
+      </p>
+
+		<footer class="notes">
+			   Esta interesado en experimentar nuevos sabores exóticos y fascinantes, entonces esta app es para usted, podrá preparar platos platos paras sus amigos, familia o ese alguien especial, pruébela y vera como sera el centro de atención en las reuniones familiares.
+		</footer>
+
+		</section>
+	</div></div>
+
+  <div id="peru-cookbook-1" class="slide"><div>
+    <section>
+      <header>
+        <h2>Sobre la aplicación</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/PeruCookbook1.png" 
+             alt="Metro de Lima"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Propósito</li>
+        <li>Materiales</li>
+        <li>Tipos</li>
+        <ul>
+          <li>Web / Packaged</li>
+        </ul>
+        <li>¿Planes?</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+	<div id="jm-cines-ica" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Jm Cines Ica</h2>
+			</header>
+			<img src="pictures/appsperu/JmCinesIca0.png" class="middle" alt="Jm Cines Ica">
+      <p class="demourl">
+        <a href="https://marketplace.firefox.com/app/jm-cines-ica">Por Carlos Lévano</a>
+      </p>
+
+		<footer class="notes">
+			   JM Cines Ica es un lugar donde podras ver la cartelera de los cines locales entre ellos esta Cinerama Plaza del Sol, Cinerama El Quinde, Movie Time Chincha, Uvk Ica, podrás ver los estrenos y proximos estrenos todo al alcance de tu mano, se actualiza la cartelera todos los jueves ya pronto se tendra los proximos estrenos en una lista muy atractiva...un sistema de cines para Ica, Perú (Peru)
+		</footer>
+
+		</section>
+	</div></div>
+
+  <div id="jm-cines-ica-1" class="slide"><div>
+    <section>
+      <header>
+        <h2>Sobre la aplicación</h2>
+      </header>
+      <figure class="right shadow frame">
+        <img src="pictures/appsperu/JmCinesIca1.png" 
+             alt="Jm Cines Ica"
+             height="480">
+      </figure>
+      <ul class="longlist">
+        <li>Propósito</li>
+        <li>Materiales</li>
+        <li>Tipos</li>
+        <ul>
+          <li>Web / Hosted</li>
+        </ul>
+        <li>¿Planes?</li>
+      </ul>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+  
+  <div id="tu-turno" class="slide cover w"><div>
+    <section>
+      <header>
+        <h2>Ahora les toca a ustedes</h2>
+      </header>
+        <img src="pictures/appsperu/MozCafeChiclayo.jpg" 
+             alt="MozCafé Chiclayo" 
+             class="middle shadow" height="400">
+			<p class="demourl">
+				<a href="https://peru.etherpad.mozilla.org/58">peru.etherpad.mozilla.org/58</a>
+			</p>
+      <footer class="notes">
+        Esto recién empieza, ¡Necesitamos apps!
+      </footer>
+    </section>
+  </div></div>
+
+  <div id="la-web" class="slide h cover"><div>
+    <section>
+      <header>
+        <h2>El mercado más grande: la web</h2>
+      </header>
+      <img src="pictures/fxos/hobbes-earth.jpg" 
+           alt="World wide web" 
+           class="middle shadow" height="450">
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="zomgsearch" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Búsqueda dinámica de aplicaciones</h2>
+      </header>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="dynappimage" class="slide"><div>
+    <section>
+      <header>
+        <h2>Caso de uso a aplicación</h2>
+      </header>
+       <img src="pictures/fxos/everythingme.jpg" 
+           alt="The search interface of Firefox OS" 
+           height="450"
+           class="middle"> 
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div id="thanks" class="slide"><div>
+    <section>
+      <header>
+        <h2>Gracias</h2>
+      </header>
+      <img src="pictures/mozillaoverview/redpanda.jpg" class="right" alt="Red panda (Firefox)">
+      <ul class="nobull">
+        <li>Juan Eladio Sánchez Rosas</li>
+        <li>Mozilla Rep</li>
+        <li><a href="https://twitter.com/juaneladio">@juaneladio</a></li>
+        <li><strong>Slides</strong>: <a href="http://juaneladio.github.io/apps-peruanas-firefox-os">juaneladio.github.io/apps-peruanas-firefox-os</a></li>
+      </ul>
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">Photo by Yortw</a>
+      </small>
+      <footer class="notes">
+      </footer>
+		</section>
+	</div></div>
+
+  <!--
+    Para esconder la barra de progreso de la presentación, borra el elemento con la clase progress.
+    -->
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
